@@ -1,11 +1,12 @@
-﻿using System;//Kirill Dmitrijev
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;//Kirill Dmitrijev
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-//Kirill Dmitrijev
+using System.Threading;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Essentials;
 //Kirill Dmitrijev
 namespace App1
 {
@@ -14,6 +15,7 @@ namespace App1
     {
         Label pis1, pis2, pis3, pis4, pis5, pis6, pis7, pis8, pis9, ad1, ad2, ad3, ad4, ad5, ras1, ras2, ras3, ras4, ras5, ras6, ras7, ras8, ras9, ras10, ras11, ras12, ras13, ras14;//Kirill Dmitrijev
         Frame bok1;//Kirill Dmitrijev
+        bool taps = false;
         public View1()
         {
             Grid abs = new Grid();
@@ -121,7 +123,36 @@ namespace App1
             Grid.SetRowSpan(ras12, 3);//Kirill Dmitrijev
             abs.Children.Add(ras12, 5, 5);
 
+            var tap = new TapGestureRecognizer();
+
+            tap.Tapped += (s, e) =>
+            {
+                ras1 = (Label)s;
+                //Minfo();
+                if (taps==true)
+                {
+                    ras1.FontSize = 10;
+                    ras1.Text = "e107 Maria oleinik";
+                    taps = false;
+
+                }
+                else
+                {
+                    ras1.FontSize = 20;
+                    ras1.Text = "e108";
+                    taps = true;
+                }
+            };
+            ras1.GestureRecognizers.Add(tap);
             Content = abs;
         }//Kirill Dmitrijev
+
+
+
+        public async void Minfo()
+        {
+
+          //await DisplayAlert("Информация", "Замен нету", "закрыть");
+        }
     }
 }//Kirill Dmitrijev

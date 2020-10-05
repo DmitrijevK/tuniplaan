@@ -15,16 +15,6 @@ namespace App1
         public MainPage()
         {
             Grid abs = new Grid();
-            for (int i = 0; i < 10; i++)
-            {
-                abs.ColumnDefinitions.Add(new ColumnDefinition{ Width = new GridLength(1, GridUnitType.Star) });
-            }
-
-            for (int i = 0; i < 5; i++)
-            {
-                abs.RowDefinitions.Add(new ColumnDefinition({ Width = new GridLength(1, GridUnitType.Star) });
-            }
-
             bok = new BoxView {Color = Color.Black };
             abs.Children.Add(bok, 0, 0);
 
