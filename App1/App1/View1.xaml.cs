@@ -1,19 +1,19 @@
-﻿using System;
+﻿using System;//Kirill Dmitrijev
 using System.Collections.Generic;
-using System.Linq;
+using System.Linq;//Kirill Dmitrijev
 using System.Text;
 using System.Threading.Tasks;
-
+//Kirill Dmitrijev
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+//Kirill Dmitrijev
 namespace App1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class View1 : ContentView
+    public partial class View1 : ContentView//Kirill Dmitrijev
     {
-        Label pis1, pis2, pis3, pis4, pis5, pis6, pis7, pis8, pis9, ad1, ad2, ad3, ad4, ad5, ras1, ras2, ras3, ras4, ras5, ras6, ras7, ras8, ras9, ras10, ras11, ras12, ras13, ras14;
-        Frame bok1;
+        Label pis1, pis2, pis3, pis4, pis5, pis6, pis7, pis8, pis9, ad1, ad2, ad3, ad4, ad5, ras1, ras2, ras3, ras4, ras5, ras6, ras7, ras8, ras9, ras10, ras11, ras12, ras13, ras14;//Kirill Dmitrijev
+        Frame bok1;//Kirill Dmitrijev
         public View1()
         {
             Grid abs = new Grid();
@@ -26,7 +26,7 @@ namespace App1
             {
                 abs.RowDefinitions.Add(new RowDefinition{ Height = new GridLength(1, GridUnitType.Star) });
             }
-            //с верху
+            //с верху//Kirill Dmitrijev
             bok1 = new Frame { BackgroundColor = Color.White, BorderColor = Color.Black };
             abs.Children.Add(bok1, 0, 0);
             Grid.SetRowSpan(bok1, 2);
@@ -48,7 +48,7 @@ namespace App1
             abs.Children.Add(pis8, 10, 0);
             pis9 = new Label { BackgroundColor = Color.White, Text = "9" };
             abs.Children.Add(pis9, 11, 0);
-            //с боку
+            //с боку//Kirill Dmitrijev
             ad1 = new Label { BackgroundColor = Color.White, Text = "Понедельник" };
             abs.Children.Add(ad1, 0, 1);
             Grid.SetRowSpan(ad1, 2);
@@ -65,16 +65,16 @@ namespace App1
             abs.Children.Add(ad5, 0, 5);
             Grid.SetRowSpan(ad5, 2);
 
-            //САМО РАСПИСАНИЕ
+            //САМО РАСПИСАНИЕ//Kirill Dmitrijev
 
             ras1 = new Label { BackgroundColor = Color.Green, Text = "Keel ja \n Kirjandus" };
             Grid.SetRowSpan(ras1, 2);
             abs.Children.Add(ras1, 3,1);
 
-            ras2 = new Label { BackgroundColor = Color.DeepPink, Text = "Võrgud ja Seadm." };
+            ras2 = new Label { BackgroundColor = Color.DeepPink, Text = "Võrgud ja Seadm." };//Kirill Dmitrijev
             Grid.SetRowSpan(ras2, 2);
             abs.Children.Add(ras2, 5, 1);
-
+            //Kirill Dmitrijev
             ras3 = new Label { BackgroundColor = Color.LightBlue, Text = "Mob. Rak." };
             Grid.SetRowSpan(ras3, 3);
             abs.Children.Add(ras3, 8, 1);
@@ -83,7 +83,7 @@ namespace App1
             Grid.SetRowSpan(ras4, 3);
             abs.Children.Add(ras4, 3, 2);
 
-            ras5 = new Label { BackgroundColor = Color.Gray, Text = "Inglise W.hald" };
+            ras5 = new Label { BackgroundColor = Color.Gray, Text = "Inglise W.hald" };//Kirill Dmitrijev
             Grid.SetRowSpan(ras5, 2);
             abs.Children.Add(ras5, 7, 2);
 
@@ -101,7 +101,7 @@ namespace App1
 
             ras9 = new Label { BackgroundColor = Color.Pink, Text = "Keemia \n Biologia" };
             abs.Children.Add(ras9, 11, 3);
-
+            //Kirill Dmitrijev
             ras10 = new Label { BackgroundColor = Color.DeepPink, Text = "W.paig.sead." };
             Grid.SetRowSpan(ras10, 3);
             abs.Children.Add(ras10, 3, 4);
@@ -109,7 +109,7 @@ namespace App1
             ras11 = new Label { BackgroundColor = Color.Gray, Text = "Võrgud ja Seadm." };
             Grid.SetRowSpan(ras11, 2);
             abs.Children.Add(ras11, 7, 4);
-
+            //Kirill Dmitrijev
             ras12 = new Label { BackgroundColor = Color.Gray, Text = "Inglise W.hald" };
             Grid.SetRowSpan(ras12, 2);
             abs.Children.Add(ras12, 9, 4);
@@ -118,10 +118,10 @@ namespace App1
             abs.Children.Add(ras12, 3, 5);
 
             ras14 = new Label { BackgroundColor = Color.LightBlue, Text = "Mob. Rak." };
-            Grid.SetRowSpan(ras12, 3);
+            Grid.SetRowSpan(ras12, 3);//Kirill Dmitrijev
             abs.Children.Add(ras12, 5, 5);
 
-            Content = abs; 
-        }
+            Content = abs;
+        }//Kirill Dmitrijev
     }
-}
+}//Kirill Dmitrijev
