@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Threading;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Xamarin.Essentials;
-//Kirill Dmitrijev
+
 namespace App1
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class View1 : ContentView//Kirill Dmitrijev
+    public partial class Page1 : ContentPage
     {
         Label pis1, pis2, pis3, pis4, pis5, pis6, pis7, pis8, pis9, ad1, ad2, ad3, ad4, ad5, ras1, ras2, ras3, ras4, ras5, ras6, ras7, ras8, ras9, ras10, ras11, ras12, ras13, ras14;//Kirill Dmitrijev
         Frame bok1;//Kirill Dmitrijev
         bool taps = false;
-        public View1()
+        public Page1()
         {
             Grid abs = new Grid();
             for (int i = 0; i < 10; i++)
@@ -26,7 +25,7 @@ namespace App1
 
             for (int i = 0; i < 5; i++)
             {
-                abs.RowDefinitions.Add(new RowDefinition{ Height = new GridLength(1, GridUnitType.Star) });
+                abs.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             }
             //с верху//Kirill Dmitrijev
             bok1 = new Frame { BackgroundColor = Color.White, BorderColor = Color.Black };
@@ -71,7 +70,7 @@ namespace App1
 
             ras1 = new Label { BackgroundColor = Color.Green, Text = "Keel ja \n Kirjandus" };
             Grid.SetRowSpan(ras1, 2);
-            abs.Children.Add(ras1, 3,1);
+            abs.Children.Add(ras1, 3, 1);
 
             ras2 = new Label { BackgroundColor = Color.DeepPink, Text = "Võrgud ja Seadm." };//Kirill Dmitrijev
             Grid.SetRowSpan(ras2, 2);
@@ -129,7 +128,7 @@ namespace App1
             {
                 ras1 = (Label)s;
                 //Minfo();
-                if (taps==true)
+                if (taps == true)
                 {
                     ras1.FontSize = 10;
                     ras1.Text = "e107 Maria oleinik";
@@ -146,13 +145,5 @@ namespace App1
             ras1.GestureRecognizers.Add(tap);
             Content = abs;
         }//Kirill Dmitrijev
-
-
-
-        public async void Minfo()
-        {
-
-          //await DisplayAlert("Информация", "Замен нету", "закрыть");
-        }
     }
 }//Kirill Dmitrijev
