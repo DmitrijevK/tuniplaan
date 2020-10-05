@@ -128,6 +128,97 @@ namespace App1
             tap.Tapped += (s, e) =>
             {
                 // ---------------------------------------
+                ras13 = (Label)s;
+                if (taps == true)
+                {
+                    ras13.FontSize = 10;
+                    ras13.Text = "B144, S.Pesets.";
+                }
+                else
+                {
+                    ras13.FontSize = 20;
+                    ras13.Text = "Keemia \n Biologia";
+                    taps = true;
+                }
+                // ---------------------------------------
+                ras12 = (Label)s;
+                if (taps == true)
+                {
+                    ras12.FontSize = 10;
+                    ras12.Text = "B242, j.Voron.";
+                }
+                else
+                {
+                    ras12.FontSize = 20;
+                    ras12.Text = "Inglise W.hald";
+                    taps = true;
+                }
+                // ---------------------------------------
+                ras11 = (Label)s;
+                if (taps == true)
+                {
+                    ras11.FontSize = 10;
+                    ras11.Text = "A123, M.Agapov";
+                }
+                else
+                {
+                    ras11.FontSize = 20;
+                    ras11.Text = "Võrgud ja Seadm.";
+                    taps = true;
+                }
+                // ---------------------------------------
+                ras10 = (Label)s;
+                if (taps == true)
+                {
+                    ras10.FontSize = 10;
+                    ras10.Text = "A243, L.Shkarbanova";
+                }
+                else
+                {
+                    ras10.FontSize = 20;
+                    ras10.Text = "W.paig.sead.";
+                    taps = true;
+                }
+                // ---------------------------------------
+                ras9 = (Label)s;
+                if (taps == true)
+                {
+                    ras9.FontSize = 10;
+                    ras9.Text = "B144, S.Pesets.";
+                }
+                else
+                {
+                    ras9.FontSize = 20;
+                    ras9.Text = "Keemia \n Biologia";
+                    taps = true;
+                }
+                // ---------------------------------------
+                ras8 = (Label)s;
+                if (taps == true)
+                {
+                    ras8.FontSize = 10;
+                    ras8.Text = "B212, j.Skrul";
+                }
+                else
+                {
+                    ras8.FontSize = 20;
+                    ras8.Text = "Transp.log.hut.";
+                    taps = true;
+                }
+                // ---------------------------------------
+                ras7 = (Label)s;
+                if (taps == true)
+                {
+                    ras7.FontSize = 10;
+                    ras7.Text = "A243, L.Shkarbanova";
+                }
+                else
+                {
+                    ras7.FontSize = 20;
+                    ras7.Text = "W.paig.sead.";
+                    taps = true;
+                }
+                // ---------------------------------------
                 ras6 = (Label)s;
                 if (taps == true)
                 {
